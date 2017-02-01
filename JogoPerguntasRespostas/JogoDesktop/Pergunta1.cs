@@ -16,5 +16,37 @@ namespace JogoDesktop
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProxima_Click(object sender, EventArgs e)
+        {
+            if(rdbResposta2.Checked == true)
+            {
+                MessageBox.Show("ACERTOUUU");
+            }else
+            {
+                MessageBox.Show("ERROUU");
+                    }
+
+        }
+
+        private void rdbResposta2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rdbResposta1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

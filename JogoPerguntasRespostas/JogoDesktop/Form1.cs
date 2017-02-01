@@ -48,7 +48,7 @@ namespace JogoDesktop
 
                 //início do código para inserir o jogador na tabela
                 //using System.Data.SqlClient;
-                using (SqlConnection conexao = new SqlConnection("Server=AME0556356W10-1\\ALUNO01;Database=db_PerguntasERespostas;Trusted_Connection=Yes"))
+                using (SqlConnection conexao = new SqlConnection("Server=AME0556346W10-1\\SQLEXPRESS;Database=db_PerguntasERespostas;Trusted_Connection=Yes"))
                 {
                     using(SqlCommand comando = new SqlCommand("insert into tb_jogador(nome) values(@NOME)",conexao))
                     {
@@ -60,8 +60,11 @@ namespace JogoDesktop
                             MessageBox.Show("Olá " + txtNome.Text.ToUpper() + ". Você está pronto para continuar!!!", "PLAYYYY", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
                             System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-                            player.SoundLocation = "c:\\vm\\teste\\som.wav";
+                            player.SoundLocation = "C:\\Users\\lucas.mcladeira\\Desktop\\cartoon010.wav";
                             player.Play();
+
+                            Pergunta1 p1 = new Pergunta1();
+                            p1.ShowDialog();
 
                         }
                         else
