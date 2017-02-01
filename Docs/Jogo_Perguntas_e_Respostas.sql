@@ -19,7 +19,8 @@ create table tb_Perguntas(
     id_jogador int,
     data    datetime default getdate()
     )
-    
+    alter table tb_perguntas add id_jogador int
+
     select * from tb_Perguntas	
     
     insert into tb_Jogador(pergunta, resposta_correta)
@@ -43,4 +44,4 @@ create table tb_Perguntas(
     
     truncate table tb_jogador
     
-    alter table tb_perguntas add id_jogador int
+    
