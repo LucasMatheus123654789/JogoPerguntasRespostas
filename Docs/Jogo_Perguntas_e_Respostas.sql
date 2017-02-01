@@ -16,6 +16,7 @@ create table tb_Perguntas(
     id int identity primary key,
     pergunta varchar(max),
     resposta_correta varchar(max),
+    id_jogador int,
     data    datetime default getdate()
     )
     
@@ -41,3 +42,5 @@ create table tb_Perguntas(
     --limpa a tabela e zera o campo identity--
     
     truncate table tb_jogador
+    
+    alter table tb_perguntas add id_jogador int
