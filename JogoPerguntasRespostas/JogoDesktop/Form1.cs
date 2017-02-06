@@ -13,6 +13,7 @@ namespace JogoDesktop
 {
     public partial class frmInicial : Form
     {
+        public int id_jogador_banco;
         public frmInicial()
         {
             InitializeComponent();
@@ -63,7 +64,7 @@ namespace JogoDesktop
                             player.SoundLocation = "C:\\Users\\lucas.mcladeira\\Desktop\\cartoon010.wav";
                             player.Play();
 
-                            Pergunta1 p1 = new Pergunta1();
+                            Pergunta1 p1 = new Pergunta1(id_jogador_banco);
                             p1.ShowDialog();
 
                         }
